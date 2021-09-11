@@ -5,17 +5,15 @@ import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 
 const name = "9s";
-export const siteTitle = "Next.js Sample Website";
+const military = "YoRHa";
+export const siteTitle = "Android";
 
 const layout = ({ children, home }) => {
   return (
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="favicon.ico" />
-        <meta
-          name="description"
-          content="Learn how to build a personal website using Nextjs"
-        />
+        <meta name="description" content="Nier Automata" />
         <meta
           property="og:image"
           content={`https://og-image.vercel.app/${encodeURI(
@@ -42,17 +40,17 @@ const layout = ({ children, home }) => {
               <a>
                 <Image
                   priority
-                  src="/9s.png"
+                  src="/yorha.jpg"
                   className={utilStyles.borderCircle}
                   height={208}
-                  width={108}
+                  width={208}
                   alt={name}
                 />
               </a>
             </Link>
             <h2 className={utilStyles.headingLg}>
               <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
+                <a className={utilStyles.colorInherit}>{military}</a>
               </Link>
             </h2>
           </div>
